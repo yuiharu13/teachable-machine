@@ -16,7 +16,7 @@
 const IMAGE_SIZE = 227;
 const INPUT_SIZE = 1000;
 const TOPK = 10;
-const CLASS_COUNT = 3;
+const CLASS_COUNT = 4;
 
 const MEASURE_TIMING_EVERY_NUM_FRAMES = 20;
 
@@ -354,7 +354,7 @@ class WebcamClassifier {
         [
         0,
         0,
-        0
+        0, 0
         ];
         for (let index = 0; index < indices.length; index += 1) {
           classTopKMap[this.getClassFromIndex(indices[index])] += 1;

@@ -101,6 +101,8 @@
                             <path class="st0 wire-green" d="M152.8,0c0,39.8-151.3,5.1-151.3,68.8"/>
                             <path class="st0 wire-purple" d="M170.2,0c0,39.8,151.3,5.1,151.3,68.8"/>
                             <line class="st0 wire-orange" x1="161.5" y1="0" x2="161.5" y2="68.8"/>
+                            <line class="st0 wire-red" x1="131.5" y1="0" x2="131.5" y2="58.8"/>
+
                         </svg>
                     </div>
                     <div id="learning-section" class="section learning section--learning">
@@ -175,6 +177,28 @@
                                     <a href="#" class="button button--record button--color-orange"><span class="button__content button__content--small">Train <span class="button__color-title">Orange</span></span></a>
                                 </div>
                             </div>
+                              <div id="red" class="learning__class learning__class--disabled learning__class--red">
+                                <div class="examples">
+                                    <div class="machine__status examples__status"><span class="examples__counter">0</span> examples</div>
+                                    <div class="examples__wrapper">
+                                        <img src="assets/close.svg" class="examples__close-icon">
+                                        <a href="#" class="link link--reset">Reset</a>
+                                        <canvas class="examples__viewer"></canvas>
+                                    </div>
+                                </div>
+                                <div class="learning__class-column">
+                                    <div class="confidence">
+                                        <div class="machine__status confidence__status">Confidence</div>
+                                        <div class="machine__meter">
+                                            <div class="machine__value machine__value--color-red">
+                                                <div class="machine__percentage machine__percentage--white">0%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="button button--record button--color-red"><span class="button__content button__content--small">Train <span class="button__color-title">Red</span></span></a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="wires wires--disabled wires--right">

@@ -46,6 +46,11 @@ class GIFOutput {
 			gif: 'https://media0.giphy.com/media/I3BLTIP5Gv6h2/200w.gif'
 		});
 
+		this.defaultGifs.push({
+			still: 'https://media0.giphy.com/media/I3BLTIP5Gv6h2/giphy-downsized_s.gif',
+			gif: 'https://media0.giphy.com/media/I3BLTIP5Gv6h2/200w.gif'
+		});
+
 		this.edit = document.createElement('div');
 		this.edit.classList.add('gif__edit');
 
@@ -54,7 +59,7 @@ class GIFOutput {
 
 		this.borders = [];
 
-		for (let index = 0; index < 3; index += 1) {
+		for (let index = 0; index < GLOBALS.numClasses; index += 1) {
 			let id = this.classNames[index];
 			let image = this.defaultGifs[index].still;
 

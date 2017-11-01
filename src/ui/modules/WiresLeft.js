@@ -26,7 +26,10 @@ class WiresLeft {
         this.wireGreen = this.element.querySelector('.wire-green');
         this.wirePurple = this.element.querySelector('.wire-purple');
         this.wireOrange = this.element.querySelector('.wire-orange');
-        this.context = this.canvas.getContext('2d');
+                this.wireRed = this.element.querySelector('.wire-red');
+
+this.context = this.canvas.getContext('2d');
+
         this.vertical = true;
 
         window.addEventListener('resize', () => {
@@ -171,7 +174,7 @@ class WiresLeft {
         this.endY = 80;
 
         this.animator = {};
-        for (let index = 0; index < 3; index += 1) {
+        for (let index = 0; index < GLOBALS.numClasses; index += 1) {
             let id = GLOBALS.classNames[index];
             this.animator[index] = {
                 highlight: false,

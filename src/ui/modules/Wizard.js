@@ -711,13 +711,13 @@ skip(event) {
     }, 500);
     GLOBALS.inputSection.enable();
     GLOBALS.learningSection.enable();
-    GLOBALS.learningSection.enableClass(0);
-    GLOBALS.learningSection.enableClass(1);
-    GLOBALS.learningSection.enableClass(2);
+    for(var i=0; i<GLOBALS.numClasses; i++) {
+            GLOBALS.learningSection.enableClass(i);
+    }
     GLOBALS.learningSection.dehighlight();
-    GLOBALS.learningSection.dehighlightClass(0);
-    GLOBALS.learningSection.dehighlightClass(1);
-    GLOBALS.learningSection.dehighlightClass(2);
+    for(var i=0; i<GLOBALS.numClasses; i++) {
+            GLOBALS.learningSection.dehighlightClass(i);
+    }
     GLOBALS.inputSection.hideGif(0);
     GLOBALS.inputSection.hideGif(1);
     GLOBALS.inputSection.hideGif(2);
